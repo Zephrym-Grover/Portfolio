@@ -13,6 +13,7 @@ When repairing a computer, it is important to ensure that no electric static is 
 A flashlight is useful when working in a dark area or an area where other light is blocked by the equipment being worked on. Some computer repair personnel prefer head lamps, as these do not require a free hand to hold. I find that these head-mounted options are harder to control, because in order to change the angle of the light, one has to change the tilt of their head. Therefore, I recommend small, lightweight flashlights that can be held between the ring finger and the pinky, leaving three fingers on that hand available for other tasks.
 ### Loctite
 Loctite is useful for when components are becoming unnecessarily use. While it has an important role in IT Systems repair, it is often overused. It should only be used to bind screws as a last resort, because it will make it almost impossible to remove the screw later if the need arises. 
+/
 https://www.amazon.com/dp/B07Z898K2W?lv=shuf&hvlocphy=105239&linkCode=df0&psc=1&hvnetw=s&hvdev=c&hvadid=80470717337097&hvqmt=e&tag=bngsmtphsnus-20&hvbmt=be&hvtargid=pla-4584070204204485&msclkid=592b85a2137a1635c225efec42da5723&channelId=69&ref_=asc_df_B07Z898K2W&plpRedirect=mhFallback
 ### Loopback Plug
 Loopback plugs are useful for diagnosing port issues. Usually featuring an RJ-45 jack on the one side and a USB end on the other, they are mostly used for testing a computer's ethernet port. However, there are fiber-optic and serial cable loopback plugs as well, used for testing the 
@@ -31,7 +32,7 @@ https://www.ebay.com/itm/233072291297?chn=ps&norover=1&mkevt=1&mkrid=711-167538-
 ### Tweezers
 Tweezers are useful for retrieving lost items within the body of a computer or removing an item that is lodged somewhere it shouldn't be. One of the common examples is a lost screw, especially if it is resting somewhere important such as within a fan. 
 ### Toolbox
-
+With the amount of different tools and supplies used in computer repair, a proper toolbox is necessary in order to keep everything organized for easy retrieval and to prevent losing items. 
 ## WD-40 Spray
 Most computers have moving parts, the most common of these being fans. Moving components will sometimes get stuck, and therefore require a bit of grease to get moving. WD-40 may not be the most glamorous option, but it is highly effective when it comes to getting stuck fans loose.
 
