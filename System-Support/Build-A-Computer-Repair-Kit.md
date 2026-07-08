@@ -8,6 +8,7 @@ Cable Ties are used at all levels of cable management, whether it is routing cab
 One of the most common findings in a computer is dust buildup. While dust can be mostly ignored, it does make repairs more difficult, and can also make plugging new components in more difficult, as the dust gets in the way of the new component's contacts and the contacts in the computer's sockets. Compressed air is a safe and effective way to remove the buildup from a computer without damaging any of the components. 
 ### ESD Wrist-Strap
 When repairing a computer, it is important to ensure that no electric static is conveyed from the user to the computer components that they are working on. Computer components are very sensitive to electrostatic damage. ESD wrist straps keep the user electrically grounded and prevent this damage. Electrostatic mats are also a common solution, however they tend to be more expensive than ESD wrist straps. Many IT professionals use both in tandem to prevent electrostatic damage to devices from the user.
+<img width="578" height="659" alt="image" src="https://github.com/user-attachments/assets/16d6a107-0fe2-48a5-bad7-c347d02256c1" />
 ### Flashlight
 A flashlight is useful when working in a dark area or an area where other light is blocked by the equipment being worked on. Some computer repair personnel prefer head lamps, as these do not require a free hand to hold. I find that these head-mounted options are harder to control, because in order to change the angle of the light, one has to change the tilt of their head. Therefore, I recommend small, lightweight flashlights that can be held between the ring finger and the pinky, leaving three fingers on that hand available for other tasks.
 ### Loctite
@@ -34,4 +35,4 @@ Tweezers are useful for retrieving lost items within the body of a computer or r
 ## WD-40 Spray
 Most computers have moving parts, the most common of these being fans. Moving components will sometimes get stuck, and therefore require a bit of grease to get moving. WD-40 may not be the most glamorous option, but it is highly effective when it comes to getting stuck fans loose.
 
-<img width="578" height="659" alt="image" src="https://github.com/user-attachments/assets/16d6a107-0fe2-48a5-bad7-c347d02256c1" />
+
