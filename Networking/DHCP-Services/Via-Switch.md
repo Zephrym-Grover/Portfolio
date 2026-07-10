@@ -10,10 +10,10 @@
 - Permission from relevant network administrators to perform this procedure on the designated switch
 - VLANs to deploy DHCP services on set up on the switch (Essentially any configuration of VLANs is acceptable, but this demonstration will use the "Basic VLAN's" setup in the interest of simplicity)
 ### Step 1.) Verify Setup
--show vlan brief
+show vlan brief
 
-<img width="590" height="81" alt="image" src="https://github.com/user-attachments/assets/f8e8ad56-8e1a-41d0-a27a-ffee0aec41fe" 
-  
+<img width="590" height="81" alt="image" src="https://github.com/user-attachments/assets/a37b8286-1da8-4bee-87b5-3342f9a4b13f" />
+
 Image: The VLAN setup used for this lab, which functions as follows:
 
 <img width="776" height="179" alt="image" src="https://github.com/user-attachments/assets/2bc6ec93-eeea-4aff-81e9-2ca3267a7098" />
