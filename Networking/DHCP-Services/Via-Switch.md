@@ -27,8 +27,9 @@ Image: The VLAN setup used for this lab, which functions as follows:
   <img width="659" height="126" alt="image" src="https://github.com/user-attachments/assets/3d2ee01a-56ce-4d86-86ff-273d6272d69e" />
   
 - VLAN 9 utilizes ports 9, 10, and 11
+  
 ### Step 2.) 
--Type the following commands into the console of the switch
+:Type the following commands into the console of the switch
 -Switch> enable
 -Switch# conf t
 -Switch# ip routing
