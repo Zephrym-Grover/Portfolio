@@ -7,20 +7,30 @@
 - Laptop equipped with Wireshark (This may be the same laptop as the laptop with the terminal emulator, but I found it easier to use a second laptop dedicated to running Wireshark in this lab)
 - Serial port OR USB to Serial adapter (I used the latter approach)
 - Cisco Rollover Cable
-- Patch cables (Minimum of three is required for the redundant links between the switches and the Wireshark monitoring. My setup has a patch panel system that requires two extra cables, your setup may vary)
+- Patch cables (Minimum of three is required for the redundant links between the switches and the Wireshark monitoring. My setup has a patch panel system that allows me to work from my computers in my office while the networking gear sits in a different lab, and the cables are threaded through the walls. This setup requires two extra cables, your setup may vary)
 - Two Cisco Catalyst 3750 PoE Switches
 - Permission from relevant network administrators to perform this procedure on the designated switch
 ### Step 1.) Configuring LAN with redundant links: Hardware side
-•	Plug USB to Serial cable into computer
-•	Connect that Serial connector to the Serial connector on Cisco Rollover cable
-•	Plug Cisco Rollover cable into wall jack # (Insert # here)
-•	Plug ethernet cable into corresponding port on patch panel
-•	Connect that cable to serial port of a switch
-•	Find a second valid switch
-•	Connect second Ethernet cable between SW1-FA1/0/35 – SW2-Fa1/0/35
-•	Connect third Ethernet cable between SW1-FA1/0/36 to SW2-FA1/0/36
+-	Plug USB to Serial cable into computer
+-	Connect that Serial connector to the Serial connector on Cisco Rollover cable
+-	Plug Cisco Rollover cable into wall jack # (Insert # here)
+-	Plug ethernet cable into corresponding port on patch panel
+-	Connect that cable to serial port of a switch
+-	Find a second valid switch
+-	Connect second Ethernet cable between SW1-FA1/0/35 – SW2-Fa1/0/35
+-	Connect third Ethernet cable between SW1-FA1/0/36 to SW2-FA1/0/36
+### Step 2.) Configuring WireShark monitoring: Hardware side
+- Connect the laptop equipped with WireShark to a patch cable. This can be direct if the laptop posesses an ethernet port. If not (as my setup was), connect an ethernet to USB adapter to the laptop, and plug a patch cable into the ethernet side of the adapter
+- Plug the other side of the ethernet cable into an unused port on your switch. (It doesn't matter which switch or which port, but the highest number port is a good choice for a SPAN port
+- Open WireShark on the connected computer
+### Step 3.) Configuring WireShark Monitoring: Software side
+-Type the following commands into the console of whichever switch is connected to the WireShark laptop:
+- Switch# monitor session 1 source interface FastEthernet1/0/35, FastEthernet 1/0/36 both
+- Switch# monitor session 1 destination interface FastEthernet0/48 encapsulation replicate
+- Switch# end
 
-- Type into switch 1 <code style="color : orangered">codeword Ronald McDonald</code>
+NOTE: "Encapsulation replicate" is very important, as that transmits all traffic from the switch to the SPAN port. Without this, STP packets will not necessariliy be mirrored.
+
 # Lessons Learned
 
 This experiment was completed through a combination of revising, checking problems in my documentation, and thinking on my feet. Using Claude AI (running Opus 4.5) I was led to believe that I needed to configure the redundant link connections, when they were automatic through transparent switching. This is a lesson that AI is not always reliable, and not always capable of understanding the problem at hand, even when provided with screenshots. It is a tool, but it is often incapable of "bringing home the bacon".
