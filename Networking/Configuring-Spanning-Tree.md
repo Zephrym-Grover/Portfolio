@@ -28,9 +28,25 @@
 - Switch# monitor session 1 source interface FastEthernet1/0/35, FastEthernet 1/0/36 both
 - Switch# monitor session 1 destination interface FastEthernet0/48 encapsulation replicate
 - Switch# end
-
 NOTE: "Encapsulation replicate" is very important, as that transmits all traffic from the switch to the SPAN port. Without this, STP packets will not necessariliy be mirrored.
-
+- At this point, a "hello" packet for STP should be sent between the two switches every few seconds
+### Step 4.) Verification and Initializing STP
+- Switch# show interfaces trunk
+This verifies that VTP is active
+- Switch# show monitor session 1
+This step provides additional verification that step 3 was completed successfully
+- Switch# show spanning-tree
+<img width="740" height="330" alt="image" src="https://github.com/user-attachments/assets/9d5c4758-3c05-4624-9677-d355430feee5" />
+Image: Output for the command Switch# show spanning-tree. This demonstrates the following:
+- Spanning Tree Protocol is enabled
+- Initial path cost for both paths is the same, at the default of 32768.
+- The root bridge is the one using linking the two FastEthernet1/0/35 ports. The port numbers do not need to match the ones shown here
+### Changing the Root Bridge
+- Connect to the non-root bridge in Privileged Exec mode
+- Switch# configure terminal
+- Switch# spanning-tree vlan 1 priority 4096
+- Switch# show spanning-tree
+- Switch# end 
 # Lessons Learned
 
 This experiment was completed through a combination of revising, checking problems in my documentation, and thinking on my feet. Using Claude AI (running Opus 4.5) I was led to believe that I needed to configure the redundant link connections, when they were automatic through transparent switching. This is a lesson that AI is not always reliable, and not always capable of understanding the problem at hand, even when provided with screenshots. It is a tool, but it is often incapable of "bringing home the bacon".
