@@ -2,6 +2,18 @@
 
 ## (STP) is a protocol designed to provide a loop free logical topology for networks, and to prevent broadcast storms like those demonstrated here
 
+# Materials Required:
+
+### Step 1.) Configuring LAN with redundant links: Hardware side
+•	Plug USB to Serial cable into computer
+•	Connect that Serial connector to the Serial connector on Cisco Rollover cable
+•	Plug Cisco Rollover cable into wall jack # (Insert # here)
+•	Plug ethernet cable into corresponding port on patch panel
+•	Connect that cable to serial port of a switch
+•	Find a second valid switch
+•	Connect second Ethernet cable between SW1-FA1/0/35 – SW2-Fa1/0/35
+•	Connect third Ethernet cable between SW1-FA1/0/36 to SW2-FA1/0/36
+
 
 # Lessons Learned
 
