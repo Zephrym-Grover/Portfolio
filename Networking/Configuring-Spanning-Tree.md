@@ -3,7 +3,13 @@
 ## (STP) is a protocol designed to provide a loop free logical topology for networks, and to prevent broadcast storms like those demonstrated here
 
 # Materials Required:
-
+- Laptop equipped with Cisco Terminal Emulation software (There are plenty of lightweight terminal emulation options. I personally use PuTTY terminal emulation. I used a Windows 11 laptop, but many older Windows versions and certain Linux versions are compatible as well)
+- Laptop equipped with Wireshark (This may be the same laptop as the laptop with the terminal emulator, but I found it easier to use a second laptop dedicated to running Wireshark in this lab)
+- Serial port OR USB to Serial adapter (I used the latter approach)
+- Cisco Rollover Cable
+- Patch cables (Minimum of three is required for the redundant links between the switches and the Wireshark monitoring. My setup has a patch panel system that requires two extra cables, your setup may vary)
+- Two Cisco Catalyst 3750 PoE Switches
+- Permission from relevant network administrators to perform this procedure on the designated switch
 ### Step 1.) Configuring LAN with redundant links: Hardware side
 •	Plug USB to Serial cable into computer
 •	Connect that Serial connector to the Serial connector on Cisco Rollover cable
