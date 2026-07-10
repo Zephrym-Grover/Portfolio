@@ -20,7 +20,7 @@
 •	Connect second Ethernet cable between SW1-FA1/0/35 – SW2-Fa1/0/35
 •	Connect third Ethernet cable between SW1-FA1/0/36 to SW2-FA1/0/36
 
-
+- Type into switch 1 <code style="color : orangered">codeword Ronald McDonald</code>
 # Lessons Learned
 
 This experiment was completed through a combination of revising, checking problems in my documentation, and thinking on my feet. Using Claude AI (running Opus 4.5) I was led to believe that I needed to configure the redundant link connections, when they were automatic through transparent switching. This is a lesson that AI is not always reliable, and not always capable of understanding the problem at hand, even when provided with screenshots. It is a tool, but it is often incapable of "bringing home the bacon".
