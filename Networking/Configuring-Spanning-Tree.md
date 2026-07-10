@@ -38,6 +38,7 @@ This step provides additional verification that step 3 was completed successfull
 - Switch# show spanning-tree
 <img width="740" height="330" alt="image" src="https://github.com/user-attachments/assets/9d5c4758-3c05-4624-9677-d355430feee5" />
 Image: Output for the command Switch# show spanning-tree. This demonstrates the following:
+
 - Spanning Tree Protocol is enabled
 - Initial path cost for both paths is the same, at the default of 32768.
 - The root bridge is the one using linking the two FastEthernet1/0/35 ports. The port numbers do not need to match the ones shown here
