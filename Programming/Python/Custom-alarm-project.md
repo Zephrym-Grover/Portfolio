@@ -141,3 +141,52 @@ jarvis-alarm/
 - Weekday vs weekend profiles: check `datetime.now().weekday()` in `main.py` and load a
   different config or skip the "class schedule" section on weekends.
   # 
+
+{
+  "user_name": "sir",
+  "location": {
+    "label": "Williamsville, NY",
+    "latitude": 42.9628,
+    "longitude": -78.7387
+  },
+  "alarm_time_24h": "06:00",
+
+  "anthropic_api_key": "sk-ant-...",
+
+  "google_calendar": {
+    "enabled": false,
+    "credentials_file": "credentials.json",
+    "token_file": "token.json",
+    "calendar_ids": ["primary"]
+  },
+
+  "sports": {
+    "enabled": true,
+    "favorite_teams": ["Seattle Seahawks"]
+  },
+
+  "news": {
+    "enabled": true,
+    "categories": {
+      "US News": "https://feeds.npr.org/1003/rss.xml",
+      "Tech News": "https://feeds.arstechnica.com/arstechnica/index",
+      "Christian News": "https://www.christianitytoday.com/ct/rss.xml"
+    },
+    "max_headlines_per_category": 3
+  },
+
+  "tts": {
+    "engine": "gtts",
+    "elevenlabs_api_key": "",
+    "elevenlabs_voice_id": ""
+  },
+
+  "audio": {
+    "intro_music_file": "c:\Users\Zephrym\Music\MP3 Music 2-15-2026\Power Metal\Orden Ogan\In the Dawn of the AI.mp3",
+    "intro_seconds_before_duck": 10,
+    "duck_volume_db": -18,
+    "fade_ms": 2500,
+    "output_file": "output/morning_briefing.mp3"
+  }
+}
+#### At this point in the project, I can't say that I fully understand how everything is supposed to fit together. This is a foray into app development that I've never done before, as my focus is networks and systems
